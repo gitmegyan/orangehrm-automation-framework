@@ -1,2 +1,1 @@
-# This is an UI automation framework using selenium , testng and Spring.
-
+# This is an UI automation framework using selenium, testng with Spring.
