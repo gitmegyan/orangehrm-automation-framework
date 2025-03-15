@@ -1,0 +1,15 @@
+- testcaseName: Login test with valid credential
+  priority: p0
+  steps:
+    1. Launch the url
+    2. Login to the application
+    3. Verify the login page is loaded
+
+- testcaseName: Login test with invalid credential
+  priority: p0
+  steps:
+    1. Launch the url
+    2. Login to the application
+    3. Verify the login page is loaded
+
+
