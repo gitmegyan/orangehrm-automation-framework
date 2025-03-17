@@ -22,9 +22,6 @@ import java.time.Duration;
 @Profile("remote")
 public class RemoteWebdriverConfig {
 
-    @Value("${default.timeout:200}")
-    private int timeout;
-
     @Value("${seelnium.grid.url}")
     private URL url;
 
@@ -46,8 +43,4 @@ public class RemoteWebdriverConfig {
         return new RemoteWebDriver(this.url, capabilities);
     }
 
-    @Bean
-    public WebDriverWait webDriverWait(WebDriver driver) {
-        return new WebDriverWait(driver, Duration.ofSeconds(this.timeout));
-    }
 }

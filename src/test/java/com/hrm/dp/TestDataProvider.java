@@ -20,7 +20,7 @@ public class TestDataProvider {
         yamlFileReader = new YamlFileReader();
     }
 
-    @DataProvider(name = "testData", parallel = false)
+    @DataProvider(name = "testData", parallel = true)
     public Object[][] commonDataProvider(final Method method) {
         Map<String, TestCaseModel> dataMap = this.getTestDatainMap(method.getName());
         Object[][] tests = new Object[dataMap.size()][1];
